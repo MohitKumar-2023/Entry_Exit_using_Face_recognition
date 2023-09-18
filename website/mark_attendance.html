@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mark Attendance - Face Recognition Attendance System</title>
+  <link rel="stylesheet" href="mark_attendance_style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Mark Attendance</a></li>
+        <li><a href="#">Entry/Exit Tracking</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Mark Attendance</h1>
+    <p>Please select your course and enter your entry number to mark your attendance:</p>
+    <form action="confirm_attendance.html" method="POST">
+      <label for="course">Select your course:</label>
+      <select id="course" name="course">
+        <option value="cs101">CS101</option>
+        <option value="cs102">CS102</option>
+        <option value="math101">Math 101</option>
+        <option value="math102">Math 102</option>
+      </select>
+      <br><br>
+      <label for="entry-number">Entry Number:</label>
+      <input type="text" id="entry-number" name="entry-number">
+      <br><br>
+      <button type="submit">Mark Attendance</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2023 Face Recognition Attendance System</p>
+  </footer>
+</body>
+</html>

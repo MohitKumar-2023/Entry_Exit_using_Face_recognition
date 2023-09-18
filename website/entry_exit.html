@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Entry/Exit Page</title>
+  <link rel="stylesheet" href="entry_exit_style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Mark Attendance</a></li>
+        <li><a href="#">Entry/Exit Tracking</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <div class="container">
+    <h1>Welcome to our campus</h1>
+    <p>Please select your entry/exit method:</p>
+    <div class="buttons">
+      <a href="scan_id.html" class="button-primary">Scan Face</a>
+      <a href="enter_entrynumber.html" class="button-secondary">Enter Entry Number</a>
+      <!-- <button class="scan-button" href="scan_id.html">Scan ID Card</button> -->
+      <!-- <button class="scan-button" onclick="showForm()">Scan ID Card</button> -->
+      <!-- <button class="entry-number-button onclick="showForm()"" onclick="showForm()">Enter Entry Number</button> -->
+    </div>
+    <div id="entry-number-form" style="display: none;">
+      <form action="submit_entry_number.php" method="POST">
+        <label for="entry-number">Enter your entry number:</label>
+        <input type="text" id="entry-number" name="entry-number" required>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    function showForm() {
+      var form = document.getElementById("entry-number-form");
+      if (form.style.display === "none") {
+        form.style.display = "block";
+      } else {
+        form.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

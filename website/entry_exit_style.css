@@ -1,0 +1,200 @@
+/* body {
+    background-image: url("IIT_Ropar.jpg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #2E4053;
+  }
+  
+  p {
+    font-size: 24px;
+    margin-bottom: 50px;
+    color: #34495E;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    background-color: #3498DB;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 20px;
+    padding: 20px 30px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:hover {
+    background-color: #2980B9;
+  }
+  
+  .scan-button {
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .entry-number-button {
+    border-radius: 0 10px 10px 0;
+  }
+  
+  form {
+    display: none;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  
+  label {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2E4053;
+  }
+  
+  input[type="text"] {
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  button[type="submit"] {
+    background-color: #3498DB;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 20px 30px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2980B9;
+  }
+   */
+   body {
+    background-image: url("IIT_Ropar.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  header {
+    background-color: #262626;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    color: #FFC107;
+  }
+  
+  .container {
+    margin: 100px auto;
+    max-width: 600px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-primary {
+    background-color: #FFC107;
+    color: #262626;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .button-primary:hover {
+    background-color: #FFA000;
+  }
+  
+  .button-secondary {
+    background-color: #FFC107;
+    color: #262626;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .button-secondary:hover {
+    background-color: #FFA000;
+  }
+  
+  label {
+    font-size: 24px;
+  }
+  
+  input[type="text"] {
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  button[type="submit"] {
+    background-color: #FFC107;
+    color: #262626;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #FFA000;
+  }
+  

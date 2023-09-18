@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Scan Face</title>
+  <link rel="stylesheet" href="scan_id_style.css">
+  <style>
+    video {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Scan Face</h1>
+  <p>Click the button below to scan your Face:</p>
+  <button id="startScanButton">Scan Your Face</button>
+  <button id="takePhotoButton">Take Photo</button>
+  <video id="video" autoplay></video>
+  <canvas id="canvas" style="display:none;"></canvas>
+  <script>
+    const startScanButton = document.getElementById('startScanButton');
+    const takePhotoButton = document.getElementById('takePhotoButton');
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const context = canvas.getContext('2d');
+    
+    startScanButton.addEventListener('click', () => {
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(stream => {
+          video.srcObject = stream;
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    });
+
+    takePhotoButton.addEventListener('click', () => {
+      context.drawImage(video, 0, 0, canvas.width, canvas.height);
+      const photoURL = canvas.toDataURL('image/png');
+      const link = document.createElement('a');
+      link.download = 'photo.png';
+      link.href = photoURL;
+      link.click();
+    });
+  </script>
+</body>
+</html>
+
