@@ -1,39 +1,6 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Scan ID Card</title>
-  <link rel="stylesheet" href="scan_id_style.css">
-  <style>
-    video {
-      width: 100%;
-    }
-  </style>
-</head>
-<body>
-  <h1>Scan ID Card</h1>
-  <p>Click the button below to scan your ID card:</p>
-  <button id="startScanButton">Scan Your ID Card</button>
-  <video id="video" autoplay></video>
-  <script>
-    const startScanButton = document.getElementById('startScanButton');
-    const video = document.getElementById('video');
-    
-    startScanButton.addEventListener('click', () => {
-      navigator.mediaDevices.getUserMedia({ video: true })
-        .then(stream => {
-          video.srcObject = stream;
-        })
-        .catch(error => {
-          console.error(error);
-        });
-    });
-  </script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>Scan ID Card</title>
@@ -44,6 +11,7 @@
     }
   </style>
 </head>
+
 <body>
   <h1>Scan Your Face</h1>
   <p>Click the button below to scan your face:</p>
@@ -57,7 +25,7 @@
     const video = document.getElementById('video');
     const canvas = document.getElementById('canvas');
     const context = canvas.getContext('2d');
-    
+
     startScanButton.addEventListener('click', () => {
       navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
@@ -78,4 +46,5 @@
     });
   </script>
 </body>
+
 </html>
